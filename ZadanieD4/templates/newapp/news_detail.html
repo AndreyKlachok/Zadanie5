@@ -1,0 +1,42 @@
+{% extends 'flatpages/default.html' %}
+
+{% block title %} New list {% endblock title %}
+
+{% block content %}
+<table>
+    <thead>
+        <th>
+            Название
+        </th>
+        <th>
+            Автор
+        </th>
+        <th>
+            Текст
+        </th>
+        <th>
+            Категория
+        </th>
+        <th>
+            дата публикации
+        </th>
+    </thead>
+    <tr>
+        <td>
+            {{ new.name|title }}
+        </td>
+        <td>
+            {{ new.author }}
+        </td>
+        <td>
+            {{ new.text }}
+        </td>
+        <td>
+            {{ new.category }}
+        </td>
+        <td>
+            {{ new.datetime }}
+        </td>
+    </tr>
+</table>
+{% endblock content %}
